@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+        <!-- Why JavaScript? -->
+
+        <!-- javascript enable user interaction and dynamic content event,community(libraries) -->
+<!-- ● Interactivity:JavaScript offers the ability to add interactivity to web pages, which can help
+engage users and create a more dynamic experience.
+● Dynamic content: JavaScript allows for creating dynamic content on web
+pages, which can help make websites more engaging and responsive. For
+example, JavaScript can be used to create live updating news feeds,
+interactive maps, or real-time chat applications.
+● Event handling: JavaScript offers powerful event handling capabilities, which
+allow web developers to respond to user interactions and other events on the
+web page.
+● Third-party libraries and frameworks: JavaScript has a large and vibrant
+ecosystem of third-party libraries and frameworks, which can help developers
+build applications more efficiently -->
+
+<!-- History of JS
+● In Dec 1991, the Internet was invented, and the first web browser created was
+Mosaic by Marc Andreessen and Eric Bina at the University of Illinois.
+● In 1993 a new web browser called “Netscape” was co-founded by Marc
+Andreessen.
+● But until then, only static websites were created and rendered using HTML.
+There was no responsiveness on the web pages.
+● The developer felt the need for dynamic websites which would change with
+user interaction.
+● In 1995 Brendan Eich was hired by Netscape to develop a scripting language
+for the browsers.
+● Within 10 days, Brendan Eich created the first draft of Javascript and named it
+MOCHA.
+● Later it was renamed to LiveScript and finally to Javascript over the years.
+● At that time, Java was a hot language, so naming MOCHA to JavaScript was
+purely a marketing strategy, and JAVA is not related to JavaScript anyhow.
+● At this time, to compete with Netscape, Microsoft decided to include scripting
+technologies in their browser. In 1996 they released Internet Explorer 3 with
+their own implementation of JavaScript called JScript.
+● With the availability of two scripting languages for different browsers, it
+became a nuisance for developers to learn two languages.
+● To solve this problem, Netscape submitted JavaScript to Ecma International to
+“standardize the syntax and semantics of a general purpose, cross-platform,
+vendor-neutral scripting language.”
+● In 1997 the first version of ECMA 262 or ECMAScript (ES), now commonly
+known as JavaScript, was released.
+● To this date, javaScript has been evolving, and new versions are added to it
+now and then -->
+
+<!-- ECMA
+● ECMA (European Computer Manufacturers Association) is an
+international standards organization responsible for standardizing
+ECMAScript, which serves as the foundation for JavaScript and other
+scripting languages.
+Founded in 1961, ECMA consists of member organizations
+representing various industry sectors, including technology companies,
+standards bodies, and government agencies.
+● The organization focuses on developing and maintaining standards to
+promote interoperability and facilitate technological advancements.
+ -->
+
+ <!-- ECMAScript vs. JavaScript:
+ ECMAScript:
+● ECMAScript refers to the standardized scripting language specification
+governed by the ECMA organization.
+● It defines the syntax, semantics, and behavior of scripting languages,
+including JavaScript.
+● It provides a common foundation for multiple implementations, ensuring
+consistency and interoperability across platforms. 
+
+JavaScript:
+● JavaScript is a popular programming language that serves as an
+implementation of the ECMAScript specification
+
+
+ECMAScript is language specification ,while javascript is a programming language based on that specification
+-->
+
+        <!-- A Variables -->
+<!-- A variable is a “named storage” for data. We can use variables to store goodies, visitors,
+and other data.variable are not keywords.they are identifiers used to represent or store data in a program.
+To create a variable in JavaScript, use the let keyword --
+Variable Naming
+● Variable names must start with a letter, an underscore (_) or a dollar sign ($).
+● Variable names cannot contain spaces.
+● Variables cannot be the same as reserved keywords such as if or const.
+● By convention, JavaScript variable names are written in camelCase.
+● Variables should be given descriptive names that indicate their content and
+usage (e.g. sellingPrice and costPrice rather than x and y).
+● As JavaScript variables do not have set types, it can be useful to include an
+indication of the type in the name (e.g. orderNumber is obviously a numeric
+ID, whereas order could be an object, a string or anything else).
+
+-->
+
+         <!-- LET KEYWORD -->
+<!-- Variables defined by let can not be redeclared but can be reassigned but can be redeclared
+ e.g 
+ 1. reassign 
+    let x =10;
+    x =16;
+    console.log(x)
+
+2.redeclared - this is not alloweded
+    let x =10;
+    let x =16; -->
+
+
+         <!-- VAR KEYWORD -->
+ <!-- Var keyword is used to declare variables.Var allows readeclaration as well as reassign of variables. -->
+
+          
+      <!-- CONST KEYWORD    -->
+<!-- Const keyword is used to declare variables.Variables which are defined using const can not be changed after assigning.
+Const does not allows readeclaration as well as reassign of variables. -->
+
+<!-- Difference between let, var, and const
+In JavaScript, let, var, and const are used to declare variables, but they differ in
+terms of scoping and mutability.
+1. let:
+● let is used to declare block-scoped variables.
+● It allows you to declare a variable inside a block and use it only within that
+block.
+● let variables can be re-assigned but not re-declared within the same scope.
+● let is more strict than var and helps avoid bugs caused by variable
+hoisting.
+2. var:
+● var is used to declare function-scoped variables.
+● It can be declared and re-declared multiple times within the same scope.
+● var declarations are hoisted to the top of the function or global scope, which
+means that they are processed before any code is executed.
+● Because of hoisting, var can lead to bugs in code if not used properly.
+● However, it's important to note that var has two scopes: global scope and
+functional scope. Variables declared with var in the global scope are
+accessible throughout the entire program, while variables declared with var
+inside a function are only accessible within that function.
+3. const:
+● const is used to declare read-only variables.
+● It can be used to declare a variable once and cannot be re-assigned within
+the same scope.
+● const variables are also block-scoped.
+● const is useful for declaring constants that should not be changed throughout
+the program. -->
+
+       <!-- Data types -->
+<!-- A data type is a classification of the type of data that can be stored and manipulated within a program. -->
+
+<!-- Classification of data types: -->
+<!-- Data Types are broadly classified into the following two categories:
+1. Primitive data types: These basic data types represent a single value. JavaScript has
+seven primitive data types. They include:
+❖ number: represents both integer and floating-point numbers in JavaScript.
+❖ string: represents textual data in JavaScript and can be enclosed in single
+quotes,double quotes, or backticks. In JavaScript, there are several ways to
+represent strings:
+➢ Single quotes ('string'): Strings can be enclosed in single quotes.
+➢ Double quotes ("string"): Strings can also be enclosed in double-quotes.
+boolean: represents a logical value, which can be either true or false.
+❖ null: represents the intentional absence of any object value.
+❖ undefined: represents a variable that has been declared but has not been assigned
+a value.
+❖ bigint: represents integers with arbitrary precision. These values usually have ‘n’ at
+the end of the number. For example: let num = 10n; Here, num is of bigint data type
+❖ symbol: represents a unique value that can be used as a key for object properties. 
+
+2.non-Primitive data type =
+   object -
+   array -          -->
+
+           <!-- Methods in Strings -->
+<!-- Strings are useful for holding data that can be represented in text form. Some of the 
+most-used operations on strings are to check their length, to build and concatenate
+them using the + and += string operators, checking for the existence or location of
+substrings with the indexOf() method, or extracting substrings with the substring() method.
+
+   toLowerCase()  - Converts a string to lower case
+   toUpperCase()  -  Converts a string to Upper Case
+   contains()     - Returns a boolean value if a string is contained by another string
+   Length()        - Return the length of the strings
+   charAt()         - Returns the character at a specified inde -->
+
+
+   <!-- concat -->
+   <!-- let result = text1.concat(text2); -->
+   <!-- answer = str1.toLowerCase() + str2.toLowerCase ; -->
+
+                 
+                     <!-- Operator -->
+<!-- Arithmetic Operators:
+Arithmetic operators are used to perform mathematical operations on numerical values.
+Addition (+): Adds two values.
+● Example: a+b
+Subtraction (-): Subtracts the right operand from the left operand.
+● Example: a-b
+Multiplication (*): Multiplies two values.
+● Example: a*b
+Division (/): Divides the left operand by the right operand.
+● Example: a/b
+Modulus (%): Returns the remainder of the division of the left operand by the right
+operand.
+● Example: a%b
+Exponentiation ():** Raises the left operand to the power of the right operand.
+● Example: a**b
+
+Comparison Operators:
+Comparison operators are used to compare two values and return a Boolean result.
+Equal (==): Returns true if the values on both sides are equal.
+● Example: a==b
+Not Equal (!=): Returns true if the values on both sides are not equal.
+● Example: a!=b
+Greater Than (>): Returns true if the left operand is greater than the right operand.
+● Example: a>b
+Less Than (<): Returns true if the left operand is less than the right operand.
+● Example: a<b
+Greater Than or Equal To (>=): Returns true if the left operand is greater than or equal to
+the right operand.
+● Example: a>=b
+Less Than or Equal To (<=): Returns true if the left operand is less than or equal to the right
+operand.
+● Example: a<=b -->
+
+
+<!-- assignment operator -->
+ <!-- = ,+= ,-= ,*= ,/= -->
+
+ <!-- logical operator -->
+ <!-- Logical operators are used to perform logical operations on Boolean values.
+ AND (and): Returns true if both the left and right operands are true.
+ ● Example: a and b
+ OR (or): Returns true if at least one of the operands is true.
+ ● Example: a or b
+ NOT (not): Returns true if the operand is false and vice versa.
+ ● Example: not a
+  -->
+
+  <!-- parseFloat() -->
+  <!-- in JavaScript, parseFloat() is a built-in function used 
+   to convert a string that represents a floating-point number into an actual floating-point number (a number with decimals). -->
+<!-- 
+   If Statement: -->
+<!-- The if statement is used for conditional execution of code. It evaluates a condition and, if
+the condition is true, executes a block of code. -->
+
+
+<!-- o If-Else Statement:
+The if-else statement extends the if statement by providing an alternative block of code
+to be executed if the condition is false -->
+
+<!-- If-Else-If Statement:
+The if-else-if statement allows you to check multiple conditions and execute different
+blocks of code based on which condition is true. -->
+
+<!-- Switch Statement:
+The switch statement is used to perform different actions based on different
+conditions. It is often more concise than a series of if-else-if statements. -->
+
+<!-- <form id="checkDay">
+    <label for="dayInput">enter you input</label>
+    <input type="text" id="dayInput" name="dayInput">
+    <button type="button" onclick="checkDay()">submit</button>
+</form> -->
+
+<!-- For Loop:
+The for loop is used when you know the number of iterations in advance. -->
+
+<!-- While Loop:
+The while loop is used when the number of iterations is not known in advance, and it
+continues iterating as long as the specified condition is true -->
+
+<!-- Do-While Loop:
+Similar to the while loop, but it guarantees that the code inside the loop will be executed at
+least once, as the condition is checked after the execution of the loop body. -->
+
+<!-- Nested Loops:
+You can use loops inside other loops to create nested structures for more complex
+iterations. -->
+
+
+<!-- Functions
+A function in JavaScript is a block of code that performs a specific task. It takes
+inputs (parameters) and returns a value or performs an action.
+Why Use Functions?
+Functions are an essential part of programming in JavaScript. Here are a few
+reasons why we use functions:
+● Reusability: You can reuse code by calling the same function multiple times.
+● Modularity: Functions help in breaking down complex code into smaller,
+more manageable parts.
+● DRY (Don't Repeat Yourself): Functions help you avoid writing repetitive
+code. -->
+
+<!-- Creating a function
+Creating a function in JS involves the following steps:
+1) Use the function keyword followed by the function name.
+2) Inside the parentheses, specify any parameters the function will accept (if
+any).
+3) Define the code to be executed by the function inside curly braces.
+4) Use the return keyword to specify the value to be returned by the function (if
+any). -->
+
+            <!-- // Creating a function using parameters:
+  
+function addnumbers(num1 ,num2){
+  console.log(num1+num2)
+} -->
+<!-- 
+● Consider another example using string literals:
+○ String literals can be used in functions in JS by enclosing the string
+within backticks (` `) instead of single or double quotes. This allows for
+the use of template literals, which can contain variables and
+expressions within ${} that are evaluated and concatenated with the
+string at runtime.
+○ Using string literals in functions can make code more readable and
+concise by reducing the need for concatenation or escaping
+characters. It can also make it easier to insert dynamic data into the string output. -->
+
+<!-- function greet(message){
+    console.log(`hello, ${message}`);
+  }
+  greet('welcome to coding ninja') -->
+
+       
+          <!-- Creating function using Default parameters: -->
+
+<!-- function greet(name="world"){
+    console.log(`Hello , ${name}`)
+          }
+    greet()
+    
+           -->
+
+<!-- Parameters vs arguments
+Parameters are the variables declared in a function's definition. Arguments are the
+values passed to the function when it is called.
+
+Return statements
+● Functions in JavaScript can optionally return a value using the return
+keyword. The value returned by a function can be used in other parts of the
+code.
+● The return statement is used to stop the execution of a function and return a
+value to the calling code.
+● A function can only have a single return statement. This means that once the
+return statement is executed, the function will immediately terminate and
+return the value specified by the statement.
+● Any statements that appear after the return statement will be considered
+"unreachable code," meaning they will not be executed. It's important to keep
+this in mind when designing functions, as any code written after the return
+statement will not have any effect on the function's output. -->
+
+<!-- Invoking a function
+To call a function in JavaScript, we simply need to use the function name followed by
+parentheses and any arguments (if required) inside the parentheses. 
+example - 
+
+function addNumber(a,b){
+    return a+b;
+  }
+  const result = addNumber(5,6);
+  console.log(result)
+   -->
+
+ <!-- Arrays
+   In JavaScript, an array is a collection of data values of any data type. Arrays are a
+   fundamental data structure and are used to store and manipulate data in many
+   JavaScript programs. -->
+  
+   <!-- Defining Array in JS:
+There are different ways to define an array in JavaScript. They are listed below:
+1. The most common way is to use square brackets and list out the elements
+of the array separated by commas. 
+For example:
+const array_name=[item1 ,item2 ,item3]
+const myArray = [10, 20,30,40,50]
+
+2. Another way to define an array is to use the Array() constructor. For
+example:
+const myArray = new Array(1 ,2,3,4,5);
+
+3. In JavaScript, we can use the Array.from() method to create a new array
+from an existing array-like or iterable object or from a string.
+● Array.from() can be used to create an array from a string, where
+each character in the string becomes an element in the new array, like
+this:
+const myString = 'hello';
+const newArray = Array.from(myString)
+console.log(newArray);
+
+● Arrays can contain any number of elements, separated by commas.
+The elements in an array can be of any data type, including other
+arrays, objects, or functions. For Example:
+const myArray =[1 ,"two",true ,["four","five"],{six:6}]; -->
+
+<!-- Accessing Array elements:
+Arrays in JavaScript are zero-indexed, which means that the first element in an array
+is accessed using the index 0, the second element is accessed using the index 1,
+and so on.
+1. Accessing using square brackets:
+const myArray =[1,2,3,4,5];
+console.log(myArray[0]);
+console.log(myArray[2]);
+
+2. Accessing using .at():
+const arr = [1,2,3,4,5];
+console.log(arr.at(1)); -->
+
+<!-- Built-in array methods:
+JavaScript arrays have several built-in methods that allow you to perform various
+operations on array elements. Here are some of the most commonly used methods:
+1. push(): adds one or more elements to the end of an array
+2. pop(): removes the last element from an array and returns it.
+● Note that the `pop()` method in JavaScript returns the value of the
+element that was removed from the end of the array.
+3. sort(): sort the elements of an array in ascending or descending order.
+4. indexOf(): returns the index of the first occurrence of a specified element in
+an array.
+5. slice(): returns a new array containing a portion of the original array.
+● Negative indices can be used with the slice() method to extract
+elements from the end of an array. -  copy
+6. splice(): update the original array content by removing or adding elements. -cut
+7. concat(): returns a new array that combines two or more arrays. -->4
+
+
+<!-- Iterating over Arrays:
+In JavaScript, you can use loops to iterate over the elements of an array. The most
+common loop types for iterating over arrays are for loops, for...of loops, and
+for...in loops.
+● Using for loop: The general for loop works iterates over an array as
+In this example, the loop iterates over each element of the myArray array and
+logs it to the console
+● Using for…of loop:  Iterates over iterable objects like arrays, strings, or sets.
+● Using for…in loop: Iterates over the keys of an object. -->
+
+<!-- Break and Continue
+In JavaScript, break and continue are keywords used inside loops to control the
+flow of the iteration.
+● break is used to exit out of a loop entirely when a certain condition is met.
+Once the break statement is executed, the loop will stop and control will
+move to the next line of code after the loop.
+
+● continue is used to skip the current iteration of a loop and move on to the
+next iteration. Once the continue statement is executed, any code that
+comes after it within the current iteration will be skipped. -->
+<!-- 
+Spread and Rest Operator
+Rest and Spread operators are useful tools in JavaScript that provide flexible ways
+to work with function arguments and arrays.
+1. The rest operator in JavaScript is a syntax represented by three dots (...) that allows you to collect multiple elements into a single array. 
+   It can be used in function parameters to gather all remaining arguments, or in destructuring assignments to collect the remaining elements of an array 
+   or properties of an object.
+2. The spread operator `...` is used to spread the elements of an array into a
+   new array or function arguments. It is commonly used to concatenate arrays 
+   or to pass an array of arguments to a function.Spread: Expands elements into individual items. -->
+
+<!-- destructuring - destructuring assignment is used to upack values from an array ,or property from object , into distinct variable -->
+
+           <!-- JavaScript Copying: Shallow vs Deep
+   // Shallow -> Only Gets the Ref of memory location
+// Partial -> It Copies the object's primitive values
+// Deep -> When all the properties are copied by values -->
+
+<!-- 
+Objects
+Objects are collections of key-value pairs, where each key is a string (also called a
+"property name"), and each value can be any data type, including other objects.
+Objects can be used to represent complex data structures, such as arrays or even
+other objects. -->
+
+<!-- Defining Window Object: The engine defines the global window object, which
+serves as the outermost object in the environment.
+2. Creating this Variable: The this variable is created and assigned to the
+window object. It represents the context in which the current code is
+executing.
+3. Hoisting: Hoisting takes place, where variable and function declarations are
+moved to the top of their respective scopes. This allows you to use variables
+and functions before they are formally declared in the code.
+We will cover the concept of hoisting in more detail in a dedicated section
+later on. -->
+
+<!-- callstack -->
+<!-- In JavaScript, the call stack is a mechanism used to keep track of the current execution context (or function invocation) of a program.
+ It operates on a Last In, First Out (LIFO) basis, meaning the last function that was pushed onto the stack is the first to be popped off
+  when the execution is finished. -->
+
+
+<!-- Scope in JS - 
+   1. Global Scope:
+Variables declared outside of any function or block are in the global scope. They can
+be accessed from anywhere in the code, including inside functions or blocks.
+2. Functional/Local Scope:
+Variables declared inside a function or block are in the functional/local scope. They
+can only be accessed from within that function or block.
+3. Block Scope:
+Variables declared using let or const inside a block (e.g., inside a for loop or if
+statement) are in the block scope. They can only be accessed from within that block. -->
+
+<!-- Closures in JS
+● In JavaScript, a closure is created when a function accesses variables outside
+of its immediate lexical scope (ancestor).
+● The closure retains a reference to the environment in which it was created,
+allowing the function to access and manipulate variables in that environment,
+even after the outer function has returned. -->
+
+
+<!-- **Currying** is a technique in functional programming where a function is decomposed into a sequence of functions,
+ each taking a single argument. This allows you to partially apply the function to some arguments and generate a 
+ new function that awaits the remaining arguments. -->
+
+<script src="javascript.js"></script>
+
+
+
+
+</body>
+</html>

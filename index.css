@@ -1,0 +1,861 @@
+/* h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+} */
+
+
+/* element selector */
+/* 
+p{
+    color: blue;
+} */
+
+
+/* class selector */
+
+/* .red{
+    color: orange;
+
+}
+
+.blue{
+    text-align: right;
+
+}
+
+.black{
+ text-decoration: underline ;
+
+} */
+
+
+/* id selector */
+
+/* #one{
+
+    color: aqua;
+}
+
+
+#two{
+    background-color: blueviolet;
+}
+
+
+#three{
+
+    text-decoration: solid;
+}
+
+#foure{
+    background-color: lightgray;
+} */
+
+/* group selector */
+
+/* p , #one , .five{
+    text-align: center;
+    color: red;
+    
+
+} */
+
+/* Nesting selector */
+
+/* .one span{
+    color: blueviolet;
+}
+
+#three i{
+    text-decoration: overline;
+} */
+
+
+/* Chaining selector */
+/* 
+.five{
+    color: brown;
+    text-align: center;
+    background-color: aquamarine;
+} */
+
+
+
+/* p{
+    font-size: 3rem;
+}
+
+p #tag{
+    font-size: 3em;
+} */
+
+/* Border */
+
+
+/* p{
+    thikness
+  border-width: 2px;
+   
+  type
+  border-style: solid;
+
+  colour
+  border-color: red;
+} */
+
+/* or we can wirte like this */
+
+/* P{
+    border: 2px solid red;
+} */
+/* 
+p{
+    border-radius: 10px;
+    border: 2px solid green;
+} */
+
+/* all side are same */
+/* p{
+    border-width: 50px;
+
+} */
+/* 
+
+p{
+    border-width: 20px 5px;
+         top/bottom   right/left
+
+} */
+
+/* p{
+    border-width: 10px 20px 5px 3px;
+                  top right bottom left
+
+} */
+
+
+/* fontsize */
+/* p{
+    font-size: 30px;
+}
+
+
+h2{
+    font-size:3rem ;
+} */
+
+
+
+/* fontfamily */
+/* 
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* fontweigth */
+/* p{
+    font-weight:lighter;
+} */
+
+
+/* fontstyle */
+/* p{
+    font-style:italic;
+} */
+
+/* textalign */
+
+/* p{
+    text-align:justify;
+  
+} */
+
+
+/* text transfer */
+/* p{
+text-transform: uppercase;
+} */
+/* 
+p{
+    text-decoration:line-through;
+} */
+
+
+/* line-height */
+/* .element{
+    line-height:75px;
+} */
+
+/* letter-spacing */
+/* P{
+    letter-spacing: 20px;
+} */
+
+/* 
+world spacing */
+/* h3{
+    word-spacing: 10px;
+} */
+
+/* text shadow */
+/* #shao{
+    text-shadow: 1px 2px red;
+} */
+
+
+/* background */
+/* p{
+    background-attachment:scroll;
+    background-image:url("https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?cs=srgb&dl=pexels-jonaskakaroto-736230.jpg&fm=jpg" ) ;
+    background-position: center; */
+    
+    
+     /* background-image: linear-gradient(blue,yellow);
+     background-image: radial-gradient(red ,blue); */
+    /* background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: space;
+    background-image: round;
+      background-size:10p ,20px;
+       background-size: 10% ,20%;
+    */
+
+/* font-size: 200px;
+    background: fixed;
+    background-attachment: scroll; */
+
+
+/*
+    margin */
+/* 
+    div{
+        background-color: antiquewhite;
+        font-size: 20px;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        border: 2px solid red;
+        margin: 10px 10px 10px 10px;
+    }
+     */
+ 
+
+    /* Nagative margin */
+    
+    /* div{
+        background-color: aquamarine;
+        font-size: 20px;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 0px 10px 10px 10px;
+    } */
+
+    /* padding */
+    /* .content{
+        background-color: blueviolet;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        font-size: 20px;
+        border: 2px solid black; */
+        /* padding-top: 20px; */
+        /* padding-right: 40px; */
+        /* padding-bottom: 20px; */
+        /* padding-left: 30px; */
+        /* padding: 20px 20px 20px 20px; */
+    /* } */
+
+
+    /* inline */
+
+    /* p{display: inline;} */
+
+    /* block */
+    /* p span{
+        display: block;
+        background-color: antiquewhite;
+        height: 200px;
+        width: 200px;
+    } */
+
+    /* inline-block */
+    /* .div{
+        display: inline-block;
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        
+    } */
+
+
+    /* Position */
+/* .container{
+    border: 2px solid black;
+    background-color: bisque;
+    height: 3444px;
+}
+
+.box{
+    display: inline-block;
+    border: 2px solid red;
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+} */
+
+
+/* 
+#box3{ */
+    /* position: relative;
+    top: 34px;
+     */
+    /* right: 54px;
+    bottom: 10px;
+    left: 24px; */
+
+    /* position: absolute;
+    top: 34px; 
+    left: 24px; */
+
+    /* position: fixed;
+    right: 4px; */
+
+    /* position: sticky;
+    top: 3px; */
+
+
+/* border-box */
+/* .container{
+    box-sizing: border-box;
+} */
+
+
+/* MIN/MAX WIDTH */
+/* #div1{
+    background-color:blueviolet;
+}
+
+div2{
+    min-width: 300px;
+    max-width: 400px;
+} */
+
+/* overflow */
+
+/* div{
+  background-color: bisque;
+  width: 200px;
+  height:200px; */
+  /* overflow: hidden; */
+  /* overflow: visible; */
+  /* overflow: scroll;
+
+} */
+
+/* opacity
+
+p{
+    opacity: 0.5;
+} */
+
+/* TRANSITION */
+/* p{
+    transition: 5s ease-in-out;
+}
+
+p{
+transition-delay: 0.5s;
+transition-duration: 5s;
+transition-timing-function: ease-in-out;
+cursor: pointer;
+
+    background-color: blanchedalmond;
+} */
+
+/* BOX SHADOW */
+/* p{
+    background-color: white;
+    border: 2px solid black;
+    height: 100px;
+    width: 150px;
+    box-shadow: 1px 2px 3px 4px inset red ;
+} */
+
+
+/* flex */
+/* .flex-container{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    background-color: aquamarine; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+     /* flex-direction: row-reverse; */
+/* }
+
+.flex-container div{
+    height: 70px;
+    width: 70px;
+}
+
+#div1{
+    background-color: blueviolet;
+}
+
+#div2{
+    background-color: antiquewhite;
+}
+
+#div3{
+    background-color: blue;
+} */
+
+/* order */
+/* .flex-container{
+    display:flex;
+    width: 400px;
+    height: 100px;
+    background-color: lightgray;
+}
+
+.flex-container div{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+.div1{
+    background-color: aquamarine;
+}
+
+.div2{
+    background-color:red;
+}
+
+.div3{
+    background-color: blue;
+} */
+
+ 
+/* FLEX WRAP */
+/* .flex-container{
+    display:flex;
+    width: 250px;
+    height: 200px;
+    background-color: antiquewhite;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+}
+
+.flex-container div{
+    width: 70px;
+    height: 70px;
+}
+
+#div1{
+    background-color: aqua;
+}
+
+#div2{
+    background-color: azure;
+}
+#div3{
+    background-color: black;
+} */
+
+
+
+/* FLEX GROW */
+/* .flex-container{
+    display: flex;
+    width: 470px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.flex-container div{
+    width: 70px;
+    height: 70px;
+}
+
+#div1{
+    background-color: aqua;
+    flex-grow: 0;
+
+}
+#div2{
+    background-color: bisque;
+    flex-grow: 2;
+}
+#div3{
+    background-color: brown;
+    flex-grow: 4;
+} */
+
+
+/* FLEX SHRINK */
+/* .flex-container{
+    display: flex;
+    width: 400px;
+    height: 100px;
+    background-color: aquamarine;
+
+}
+.flex-container div{
+    width: 70px;
+    margin: 10px;
+}
+#div1{
+    background-color: bisque;
+    flex-shrink: 0;
+}
+#div2{
+    background-color: rgb(210, 40, 40);
+    flex-shrink: 2;
+}
+#div3{
+    background-color: blue;
+    flex-shrink: 4;
+} */
+
+/* FLEX - JUSTIFY CONTENT */
+/* .flex-container{
+    display: flex;
+    width: 350px;
+    background-color: antiquewhite; */
+    /* justify-content: flex-start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+/* }
+
+.flex-container div{
+    width: 70px;
+    height: 70px;
+}
+#div1{
+    background-color: aqua;
+}
+#div2{
+    background-color: rgb(188, 109, 14);
+}
+#div3{
+    background-color: #ff2538;
+} */
+
+
+
+/* FLEX - ALIGN ITEMS */
+/* .flex-container{
+    display:flex;
+    height:100px;
+    width: 350px;
+    background-color: aquamarine; */
+    /* align-items:center ; */
+    /* align-items: flex-end; */
+    /* align-items:flex-start; */
+/* 
+}
+.flex-container div{
+    height: 70px;
+    width: 70px;
+}
+#div1{
+    background-color: beige;
+}
+#div2{
+    background-color: blueviolet;
+}
+#div3{
+    background-color: brown;
+} */
+
+
+/* FLEX - ALIGN ITEMS */
+       /* example for baseline  = */
+/* .flex-container{
+    display: flex;
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    align-items: baseline;
+}
+   .flex-container div{
+        height: 70px;
+        width: 70px;
+    }
+    #div1{
+        background-color: beige;
+    }
+    #div2{
+        background-color: blueviolet;
+    }
+    #div3{
+        background-color: brown;
+    } */
+
+    /* FLEX - ALIGN CONTENT */
+
+/* .flex-container{
+    display: flex;
+    width: 550px;
+    height: 250px;
+    background-color: aliceblue;
+    flex-wrap: wrap; */
+    /* align-content: stretch; */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+/* }
+
+.flex-container div {
+width: 70px;
+min-height: 70px;
+margin: 10px;
+}
+.div1 {
+background-color: #7ff9ae;
+}
+.div2 {
+background-color: #76bbfc;
+}
+.div3 {
+    background-color: #ff7f8e;
+    }
+     */
+
+
+           /* FLEX - ALIGN SELF */
+ /* .flex-container {
+    display: flex;
+    width: 250px;
+    height: 150px;
+    background-color: lightgrey;
+  
+    
+    }
+    .flex-container div {
+    width: 70px;
+    min-height: 70px;
+    }
+    #div1 {
+    background-color: #7ff9ae;
+    align-self: center;
+    }
+    #div2 {
+    background-color: #76bbfc;
+    align-self: flex-start;
+    }
+    #div3 {
+        background-color: #ff7f8e;
+        align-self: flex-end;
+    } */
+
+
+    /* FLEX BASIS */
+/* .flex-container{
+    display: flex;
+    width: 360px;
+    height: 100px;
+    background-color: bisque;
+
+}
+
+.flex-container div{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+#div1{
+    background-color:aqua;
+    flex-basis:120px ;
+}
+
+#div2{
+    background-color: blueviolet;
+    flex-basis: 80px;
+}
+
+#div3{
+    background-color: blue;
+    flex-basis: 220px;
+} */
+
+/* overflow-wrap */
+/* p{
+    border: 2px solid green;
+    height: 100px;
+    width: 150px;
+    overflow-wrap: break-word;
+} */
+
+/* Linear Gradients: */
+/* .div1{
+    width: 50px;
+    height: 50px;
+    background-color:blue; */
+    /* background: linear-gradient(red , black); */
+    /* background: linear-gradient(to right , black ,blue); */
+    /* background: linear-gradient(to left ,red ,yellow); */
+    /* background: linear-gradient(to top right , red , black); */
+    /* background: linear-gradient(60deg ,black , red); */
+    /* background: linear-gradient(to right ,red , yellow ,black); */
+    /* background: linear-gradient(yellow 0% , black 50% ,red 100%); */
+    /* background: repeating-linear-gradient(yellow ,red 5% ,black 5%); */
+    /* background: radial-gradient(red, black, yellow); */
+    /* background: repeating-radial-gradient(red 0% , black 5% , yellow 5%); */
+
+    /* <!-- LINK RELATED PSEUDO CLASSES --> */
+            /* - :link */
+    /* a:link {
+        color: chartreuse;
+        } */
+
+          /* :visited */
+    /* a:visited{
+        color: chocolate;
+    } */
+
+          /* - :active */
+     /* a:active{
+        color: red;
+    } */
+
+        /* - :target */
+/*      
+#p1:target{
+    background-color: aliceblue;
+}
+#p2:target{
+    background-color: lightcoral;
+ } */
+
+
+         /* PSEUDO ELEMENTS */
+/* P::first-line {
+    font-size: 100px;
+    
+} */
+
+/* p::first-letter{
+  font-weight: bolder;
+} */
+
+/* p::before{
+content:url(https://static.vecteezy.com/system/resources/previews/026/975/650/large_2x/spaceship-next-generation-robotic-spaceship-leaving-the-earth-futuristic-robot-satellite-technology-space-exploration-space-travel-outer-space-spacecraft-futuristic-science-fiction-ai-generated-free-photo.jpeg);
+} */
+
+/* p::after{
+    content: url(https://static.vecteezy.com/system/resources/previews/026/975/650/large_2x/spaceship-next-generation-robotic-spaceship-leaving-the-earth-futuristic-robot-satellite-technology-space-exploration-space-travel-outer-space-spacecraft-futuristic-science-fiction-ai-generated-free-photo.jpeg);
+} */
+
+
+                    /* Animations and 3D Space */
+/* Transitions and Transforms */
+/* Transforms: */
+/* div{
+    background-color: bisque;
+    height: 100px;
+    width: 250px; */
+    /* transform: translate(50px ,100px); */
+    /* transform:rotate(100deg) */
+    /* transform: scale(1,2); */
+    /* transform: skew(20 deg ,100deg); */
+
+    /* hover */
+ /* div:hover{
+    transform: scale(1 ,2);
+ }
+
+ div{
+    background-color: blue;4
+    height: 100px;
+    width: 250px;
+ } */
+/* 
+
+ div:hover{
+    transform: translate(50px ,100px) scale(1,2);
+ }
+
+ div{
+    background-color: blue;
+    height: 100px;
+    width: 250px;
+ }  */
+
+
+
+   /* Animation */
+/* @keyframes changeShape{
+    from{
+       border-radius: 0%;
+    }
+    to{
+        border-radius: 100%;
+    }
+}
+   
+   div{
+
+    background-color: blue;
+    height: 100px;
+    width: 250px;
+    animation-name: changeShape;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+   } */
+
+    /* @keyframes changeColor{
+        from{
+            background-color: yellow;
+        }
+        50%{
+            background-color: aqua;
+
+        }
+        to{
+            background-color: black;
+        }
+    }
+
+div{
+    background-color: blueviolet;
+    width: 250px;
+    height: 150px;
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+} */
+ 
+
+/* .grid-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px; */
+    /* grid-template-columns: 1fr 2fr; */
+    /* grid-template-rows: 70px 100px;
+    grid-gap: 90px 200px; */
+    /* grid-column-start: 2; */
+    /* grid-row-start: 3; */
+    /* margin: 10px;
+
+}
+
+.grid-item{
+    background-color: bisque;
+    height: 150px;
+    width: 200px;
+
+} */
+
